@@ -1,0 +1,60 @@
+# Summary Response: Implementation
+
+Use this response when implementation is complete locally.
+
+## Local Webpage Ready
+
+## Local URL
+
+...
+
+## Files Created
+
+...
+
+## Files Modified
+
+...
+
+## Commands Run
+
+...
+
+## Frontend Design Verification
+
+- Approved design direction followed:
+- Static mockup approval checked:
+- Visual QA status:
+
+## Validation Status
+
+- Build:
+- Lint:
+- Typecheck:
+- Tests:
+- Accessibility:
+- Responsive:
+- SEO:
+- Performance:
+- Security:
+- Interface quality:
+
+## Known Issues
+
+...
+
+## Local Verification
+
+The webpage works locally without known blocking bugs.
+
+## Next Skill
+
+Use `deploy` next after final human UI and release approval.
+
+## Human Decision
+
+Please choose one:
+
+- Approve: accept the local implementation and continue to `deploy`.
+- Modify: provide changes or fixes to apply locally.
+- Reject: return to implementation review or planning.
