@@ -10,7 +10,7 @@ Create the framework structure and documentation artifacts, then refactor the wo
 
 ## Current Stage
 
-Framework prepared for local Git tracking and GitHub upload.
+Framework governance, freeze policy, schemas, sidecar records, and validation automation implemented and locally validated.
 
 ## Active Skill
 
@@ -52,6 +52,11 @@ None for this maintenance task.
 - Added GitHub-ready root files: `README.md`, `LICENSE`, `.gitignore`, and `CONTRIBUTING.md`.
 - Fixed final review inconsistencies around helper skill paths, plan input descriptions, static mockup approval, and schema wording.
 - Initialized local Git repository and prepared an initial commit.
+- Added GitHub remote `git@github.com:ezePlayground/Factory-web-page.git`.
+- Pushed `main` to `origin/main`.
+- Added framework freeze policy, roadmap, changelog, security policy, schemas, JSON sidecar records, validation script, GitHub workflow, issue templates, PR template, and mockup artifact rules.
+- Replaced vague template placeholders with bracketed field prompts.
+- Ran `bash scripts/validate-framework.sh`; validation passed.
 
 ## Files Created
 
@@ -64,6 +69,15 @@ None for this maintenance task.
 - `LICENSE`
 - `.gitignore`
 - `CONTRIBUTING.md`
+- `FRAMEWORK_FREEZE.md`
+- `ROADMAP.md`
+- `CHANGELOG.md`
+- `SECURITY.md`
+- `/schemas/**`
+- `/records/**`
+- `/artifacts/mockups/**`
+- `/scripts/validate-framework.sh`
+- `/.github/**`
 
 ## Files Modified
 
@@ -71,6 +85,10 @@ None for this maintenance task.
 - `HANDOFF.md`
 - `README.md`
 - `CONTRIBUTING.md`
+- `FRAMEWORK_FREEZE.md`
+- `ROADMAP.md`
+- `CHANGELOG.md`
+- `SECURITY.md`
 - `ai-framework/skills.md`
 - `ai-framework/workflow.md`
 - `ai-framework/orchestrator.md`
@@ -90,6 +108,10 @@ None for this maintenance task.
 - `ai-framework/roles/orchestrator.md`
 - `skills/helper/frontend-design/**`
 - `skills/orchestrator/**`
+- `schemas/**`
+- `records/**`
+- `scripts/validate-framework.sh`
+- `.github/**`
 
 ## Current Product State
 
@@ -97,14 +119,16 @@ The workspace contains a documentation-first framework that guides webpage produ
 
 The framework now includes a helper skill for distinctive frontend design quality and static visual approval before implementation when design direction is open.
 
-The project now includes GitHub-facing documentation and is intended to be tracked locally with Git before remote upload.
+The project is pushed to GitHub at `git@github.com:ezePlayground/Factory-web-page.git`. Local `main` tracks `origin/main`.
+
+The framework includes a freeze policy, validation script, GitHub workflow, JSON Schemas, and JSON sidecar records while keeping Markdown as the human-readable operating layer.
 
 ## Known Issues
 
 - No executable CLI/state-machine runner exists yet.
-- No automated schema validation exists yet.
 - No MCP integrations are configured yet.
-- No GitHub remote has been created or pushed yet.
+- Branch protection still needs to be configured manually in GitHub settings.
+- Real JSON Schemas exist, but full JSON instance validation is deferred until a CLI or schema validator is approved.
 
 ## Failed Attempts
 
@@ -130,24 +154,24 @@ The project now includes GitHub-facing documentation and is intended to be track
 - This pass remains markdown/checklist-based; no schemas, CLI runner, or automated state machine were added.
 - MIT license selected.
 - `HANDOFF.md` is intentionally included in the repository because it is part of the operating model.
-- Local Git tracking is approved; remote creation and push are not part of this pass.
+- Local Git tracking is configured and pushed to `origin/main`.
+- Freeze status starts as `Not frozen`.
+- JSON sidecars are required for machine-checkable important-event state while Markdown remains the readable operating layer.
 
 ## Pending Decisions
 
-- Whether to add a CLI runner for the state machine later.
-- Which frontend stack should be the default webpage generator target.
-- Which MCP servers and deployment platforms should be integrated first.
-- Whether to add machine-readable schemas/checklists for skill outputs, approvals, validation evidence, and handoff state.
-- Which GitHub remote URL and repository visibility to use later.
+- Whether to add a CLI runner for the state machine later. Tracked in `ROADMAP.md`.
+- Which frontend stack should be the default webpage generator target. Tracked in `ROADMAP.md`.
+- Which MCP servers and deployment platforms should be integrated first. Tracked in `ROADMAP.md`.
+- Whether to convert core state from Markdown to JSON/YAML later. Tracked in `ROADMAP.md`.
 
 ## Next Recommended Steps
 
-1. Create a GitHub repository and add it as a remote when ready.
-2. Push the local initial commit to GitHub.
-3. Run a manual simulation through all five skills plus `frontend-design`.
-4. Test `plan` with incomplete IA/design input and confirm it asks a questionnaire before producing a plan.
+1. Run `bash scripts/validate-framework.sh`.
+2. Commit and push the governance/validation pass.
+3. Configure GitHub branch protection for `main`.
+4. Run a manual simulation through all five skills plus `frontend-design`.
 5. Test the static mockup approval gate before `implementation`.
-6. Choose whether to add a CLI runner after the markdown workflow stabilizes.
 
 ## Validation Status
 
@@ -163,7 +187,8 @@ The project now includes GitHub-facing documentation and is intended to be track
 - Performance: Framework includes performance checks.
 - Security: Framework includes security checks.
 - Production Deployment: Not applicable yet.
-- GitHub Readiness: Root README, MIT license, gitignore, contributing guide, and local Git tracking prepared.
+- GitHub Readiness: Remote configured and `main` pushed to `origin/main`.
+- Framework Validation: `bash scripts/validate-framework.sh` passed locally.
 
 ## Commands Already Run
 
@@ -188,13 +213,20 @@ The project now includes GitHub-facing documentation and is intended to be track
 - `git add .`
 - `git commit -m "Initial Web Page Factory Framework"`
 - `git status --short`
+- `git remote add origin git@github.com:ezePlayground/Factory-web-page.git`
+- `git push -u origin main`
+- `git remote -v`
+- `bash scripts/validate-framework.sh`
+- `rg -n '\\.\\.\\.' AGENTS.md HANDOFF.md README.md CONTRIBUTING.md ai-framework skills FRAMEWORK_FREEZE.md ROADMAP.md CHANGELOG.md SECURITY.md`
 
 ## Commands Still Needed
 
 - None for the markdown scaffold.
-- Future executable implementation should add build/lint/test commands.
+- `git add .`
+- `git commit -m "Add framework governance and validation"`
+- `git push`
 - Manual workflow simulation is recommended for the new helper skill and static mockup gate.
-- Add and push a GitHub remote when the repository owner is ready.
+- Configure GitHub branch protection manually after the workflow is pushed.
 
 ## Risks and Assumptions
 
@@ -202,6 +234,15 @@ The project now includes GitHub-facing documentation and is intended to be track
 - Assumption: Static mockups are sufficient as the pre-implementation visual approval artifact.
 - Assumption: The repository should use the MIT license.
 - Assumption: `HANDOFF.md` should be committed with the framework.
+- Assumption: Freeze mode remains `Not frozen` until explicitly changed.
+- Assumption: JSON sidecars are the current machine-checkable layer; full JSON/YAML core conversion is deferred.
 - Risk: Without an executable runner, process compliance depends on agents following `AGENTS.md`.
 - Risk: Tooling choices depend on the eventual webpage stack.
-- Risk: No remote repository has been configured yet.
+- Risk: GitHub admins can technically bypass branch protection; `FRAMEWORK_FREEZE.md` defines the expected operating model.
+
+## JSON Sidecar Records
+
+- Handoff state: `records/handoff-state.json`
+- Approvals: `records/approvals/`
+- Skill summaries: `records/skill-summaries/`
+- Validation evidence: `records/validation-evidence/`

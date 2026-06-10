@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "changelog-entry.schema.json",
+  "title": "Changelog Entry",
+  "type": "object",
+  "required": ["version", "date", "changes"],
+  "properties": {
+    "version": { "type": "string" },
+    "date": { "type": "string" },
+    "changes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

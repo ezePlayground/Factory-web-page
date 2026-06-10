@@ -19,11 +19,11 @@ I want to build `[page type]` for `[purpose]`, targeting `[audience]`, so users 
 
 ## Assumptions
 
-- ...
+- [List only assumptions explicitly labeled as assumptions.]
 
 ## Risks
 
-- ...
+- [List risks that could affect discovery or planning.]
 
 ## Next Skill
 

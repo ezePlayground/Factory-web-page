@@ -8,6 +8,7 @@
 - Do not weaken approval gates.
 - Do not invent requirements, content, design direction, technical constraints, approvals, deployment targets, or production URLs.
 - Prefer concise, actionable contracts over long explanations.
+- Update `HANDOFF.md` after every important event.
 
 ## Editing Framework Docs
 
@@ -18,6 +19,7 @@ When editing policies, templates, or skill contracts:
 - preserve approve, modify, and reject decision paths
 - keep planning separate from implementation
 - record major decisions, files changed, commands, risks, and next steps in `HANDOFF.md`
+- update JSON sidecar records under `records/` when approvals, validation evidence, or handoff state changes
 
 ## Adding Skills
 
@@ -35,9 +37,20 @@ Helper skills belong under `skills/helper/` and must use the same contract shape
 Before publishing changes, run a static review:
 
 ```sh
-find . -maxdepth 6 -type f | sort
-rg -n "TODO|FIXME|legacy plan input wording|legacy schema wording" AGENTS.md HANDOFF.md ai-framework skills README.md
+bash scripts/validate-framework.sh
 git status --short
 ```
 
 If the repository contains a generated webpage later, also run its discovered build, lint, typecheck, tests, accessibility, responsive, SEO, performance, security, and deployment checks where available.
+
+## Freeze Mode
+
+When `FRAMEWORK_FREEZE.md` status is `Frozen`, protected framework files must not be edited directly on `main`.
+
+Maintenance changes after freeze must:
+
+- start from a GitHub maintenance request
+- use a branch and pull request
+- pass `bash scripts/validate-framework.sh`
+- update `HANDOFF.md`
+- update `CHANGELOG.md` and `ROADMAP.md` when relevant

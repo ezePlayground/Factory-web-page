@@ -2,7 +2,7 @@
 
 ## Page Sections
 
-...
+[List page sections and their purpose.]
 
 ## Components
 
@@ -11,13 +11,12 @@
 
 ## Shared UI
 
-...
+[Shared components, layout primitives, and controls.]
 
 ## Assets
 
-...
+[Images, icons, fonts, videos, documents, and missing assets.]
 
 ## Risks
 
-...
-
+[Component, content, reuse, or implementation risks.]

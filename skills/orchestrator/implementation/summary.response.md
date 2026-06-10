@@ -6,19 +6,19 @@ Use this response when implementation is complete locally.
 
 ## Local URL
 
-...
+[Provide local URL or mark not applicable with reason.]
 
 ## Files Created
 
-...
+[List created files.]
 
 ## Files Modified
 
-...
+[List modified files.]
 
 ## Commands Run
 
-...
+[List commands and important outputs.]
 
 ## Frontend Design Verification
 
@@ -41,7 +41,7 @@ Use this response when implementation is complete locally.
 
 ## Known Issues
 
-...
+[List known issues or write "None known."]
 
 ## Local Verification
 

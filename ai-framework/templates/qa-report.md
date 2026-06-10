@@ -2,11 +2,11 @@
 
 ## Summary
 
-...
+[Short QA outcome and release recommendation.]
 
 ## Commands Run
 
-...
+[Commands run and important outputs.]
 
 ## Results
 
@@ -32,12 +32,12 @@
 
 ## Issues Found
 
-...
+[Blocking, important, and polish issues with evidence.]
 
 ## Fixes Applied
 
-...
+[Fixes applied during QA, or "none".]
 
 ## Remaining Risks
 
-...
+[Known residual risks or accepted exceptions.]

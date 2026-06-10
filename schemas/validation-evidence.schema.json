@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "validation-evidence.schema.json",
+  "title": "Validation Evidence",
+  "type": "object",
+  "required": ["checkedAt", "commands", "result"],
+  "properties": {
+    "checkedAt": { "type": "string" },
+    "commands": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "result": { "type": "string", "enum": ["pass", "fail", "not-applicable"] },
+    "findings": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}
+

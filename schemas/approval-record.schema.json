@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "approval-record.schema.json",
+  "title": "Approval Record",
+  "type": "object",
+  "required": ["approvalType", "approvedBy", "approvedAt", "scope", "decision"],
+  "properties": {
+    "approvalType": { "type": "string" },
+    "approvedBy": { "type": "string" },
+    "approvedAt": { "type": "string" },
+    "scope": { "type": "string" },
+    "decision": { "type": "string", "enum": ["approved", "modified", "rejected"] },
+    "relatedArtifact": { "type": "string" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": true
+}
+

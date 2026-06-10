@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "skill-summary.schema.json",
+  "title": "Skill Summary",
+  "type": "object",
+  "required": ["skill", "status", "summary", "humanDecisionOptions"],
+  "properties": {
+    "skill": { "type": "string" },
+    "status": { "type": "string", "enum": ["missing-input", "proposed", "approved", "modified", "rejected", "completed"] },
+    "summary": { "type": "string", "minLength": 1 },
+    "humanDecisionOptions": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["approve", "modify", "reject"] },
+      "minItems": 3
+    },
+    "handoffUpdated": { "type": "boolean" }
+  },
+  "additionalProperties": true
+}
+

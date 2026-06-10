@@ -2,7 +2,7 @@
 
 ## Release Decision
 
-...
+[Approve release, block release, or approve with accepted exceptions.]
 
 ## Checklist
 
@@ -34,12 +34,12 @@
 
 ## Production URL
 
-...
+[Verified production URL.]
 
 ## Deployment Instructions
 
-...
+[Deployment command, target, rollback notes, and verification steps.]
 
 ## Known Issues
 
-...
+[Known production issues or "none known".]

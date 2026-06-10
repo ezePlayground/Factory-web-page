@@ -6,7 +6,7 @@ A markdown-first AI orchestration framework for producing production-ready webpa
 
 This framework gives an AI coding agent a controlled process for turning a webpage idea into a verified production release without inventing requirements, skipping approvals, or claiming readiness before evidence exists.
 
-The framework is intentionally documentation-first. Agents follow explicit markdown contracts, checklists, and handoff records. No CLI runner, schema validator, or automated state machine is included yet.
+The framework is intentionally documentation-first. Agents follow explicit markdown contracts, checklists, handoff records, and JSON sidecar records. No CLI runner or automated state machine is included yet.
 
 ## Primary Workflow
 
@@ -46,9 +46,16 @@ When visual direction is open, `frontend-design` requires a static mockup or equ
 ```txt
 AGENTS.md                       Operating manifest for agents
 HANDOFF.md                      Current state, decisions, risks, and resume notes
+FRAMEWORK_FREEZE.md             Freeze policy and no-direct-edit rules
+ROADMAP.md                      Deferred improvements and future decisions
+CHANGELOG.md                    Historical framework changes
 ai-framework/                   Core policies, roles, templates, and validation guidance
 skills/orchestrator/            Primary five-stage workflow skills
 skills/helper/frontend-design/  Frontend design quality helper skill
+schemas/                        JSON Schemas for machine-checkable records
+records/                        JSON sidecar records for handoff, approvals, summaries, and validation
+artifacts/mockups/              Static mockups used for visual approval
+scripts/validate-framework.sh   Dependency-free framework validation
 ```
 
 ## Production-Ready Definition
@@ -74,6 +81,25 @@ A webpage is production-ready only when:
 6. Stop at approval gates until the human approves, modifies, or rejects.
 7. Update `HANDOFF.md` after completed skill summaries or framework maintenance.
 
+## Governance And Validation
+
+Run the framework validator before committing maintenance changes:
+
+```sh
+bash scripts/validate-framework.sh
+```
+
+When the framework is declared finished, follow `FRAMEWORK_FREEZE.md`. After freeze, protected files must not be edited directly on `main`; changes must go through maintenance requests, pull requests, and validation.
+
+## Static Mockup Artifacts
+
+When visual direction is open, a static mockup or equivalent visual preview must be approved before implementation.
+
+- Store mockups in `artifacts/mockups/`.
+- Use names like `YYYY-MM-DD-[project-or-page]-[direction-name]-vN.[png|jpg|webp|pdf]`.
+- Record approval in `records/approvals/YYYY-MM-DD-[page]-mockup-approval.json`.
+- Reference the approved mockup in the plan summary and `HANDOFF.md`.
+
 ## GitHub Status
 
-This repository is prepared for local Git tracking and GitHub upload. Remote creation and push are intentionally left to the repository owner.
+This repository is pushed to `git@github.com:ezePlayground/Factory-web-page.git` on `main`, tracking `origin/main`.

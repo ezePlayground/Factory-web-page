@@ -12,6 +12,7 @@ Before using `summary.response.md`, confirm:
 - [ ] Recommended direction includes rationale.
 - [ ] Typography, color, spacing, layout, components, states, motion, and signature visual move are defined when planning.
 - [ ] Static mockup requirement and approval status are stated when visual direction needs approval.
+- [ ] Mockup artifact path and approval record path are listed when a mockup is required.
 - [ ] Vercel-derived interface checks are included where relevant.
 - [ ] Anti-slop constraints are listed.
 - [ ] Visual QA findings are based on screenshots, rendered page, or local URL evidence when QA is requested.

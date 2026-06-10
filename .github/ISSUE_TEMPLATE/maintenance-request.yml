@@ -1,0 +1,31 @@
+name: Maintenance Request
+description: Request a controlled framework maintenance change.
+title: "[Maintenance]: "
+labels: ["maintenance"]
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: Request
+      description: What should change?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Which files or framework areas are affected?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Required checks
+      options:
+        - label: Approval gates remain intact.
+          required: true
+        - label: HANDOFF.md will be updated.
+          required: true
+        - label: Validation will be run before merge.
+          required: true
+

@@ -12,6 +12,7 @@ Before using `summary.response.md`, confirm:
 - [ ] `frontend-design` helper output is included when visual direction is needed.
 - [ ] Design options, wireframes, or static mockup requirement are included when direction is not already visually approved.
 - [ ] Static mockup approval status is stated when visual direction needs approval.
+- [ ] Static mockup artifact path and approval record path are stated when a mockup is required.
 - [ ] Final or recommended design direction is stated and awaits human approval.
 - [ ] Brand direction is captured.
 - [ ] Component inventory is complete enough for implementation.

@@ -1,0 +1,27 @@
+name: Framework Gap
+description: Report a gap, inconsistency, or failure mode in the framework.
+title: "[Gap]: "
+labels: ["framework-gap"]
+body:
+  - type: textarea
+    id: gap
+    attributes:
+      label: Gap
+      description: What is missing, inconsistent, duplicated, or risky?
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: How could this affect webpage production?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed fix
+      description: Describe the smallest useful fix.
+    validations:
+      required: false
+

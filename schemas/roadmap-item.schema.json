@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "roadmap-item.schema.json",
+  "title": "Roadmap Item",
+  "type": "object",
+  "required": ["title", "status", "owner", "notes"],
+  "properties": {
+    "title": { "type": "string" },
+    "status": { "type": "string", "enum": ["planned", "deferred", "human-owned", "blocked", "done"] },
+    "owner": { "type": "string" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": true
+}
+

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "handoff-state.schema.json",
+  "title": "Handoff State",
+  "type": "object",
+  "required": ["currentGoal", "currentStage", "activeSkill", "branch", "pushed", "freezeStatus", "knownIssues"],
+  "properties": {
+    "currentGoal": { "type": "string" },
+    "currentStage": { "type": "string" },
+    "activeSkill": { "type": "string" },
+    "remote": { "type": "string" },
+    "branch": { "type": "string" },
+    "pushed": { "type": "boolean" },
+    "freezeStatus": { "type": "string", "enum": ["Not frozen", "Frozen"] },
+    "lastImportantEvent": { "type": "string" },
+    "knownIssues": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}
+

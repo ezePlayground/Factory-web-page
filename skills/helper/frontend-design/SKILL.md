@@ -64,6 +64,18 @@ When the visual direction is not already approved, require a static mockup befor
 
 The mockup can be an AI-generated image, design preview, or screenshot-style static composition. It must show the likely first viewport and enough lower-page structure for the human to judge the design direction.
 
+Store approved mockup artifacts in `artifacts/mockups/` using:
+
+```txt
+YYYY-MM-DD-[project-or-page]-[direction-name]-vN.[png|jpg|webp|pdf]
+```
+
+Record approval in:
+
+```txt
+records/approvals/YYYY-MM-DD-[page]-mockup-approval.json
+```
+
 The human must approve, modify, or reject the mockup before implementation begins.
 
 ## Anti-Slop Rules

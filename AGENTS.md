@@ -18,6 +18,7 @@ Build production-ready webpages through human-led orchestrator skills, explicit 
 - Do not invent missing requirements, content, design direction, technical constraints, approvals, deployment targets, or production URLs.
 - Prefer deterministic tools over AI judgment where deterministic tools are better.
 - Record major decisions, completed work, commands, risks, and next steps in `HANDOFF.md`.
+- Update `HANDOFF.md` after every important event: approvals, completed skills, validation results, repository pushes, deployments, major decisions, and maintenance changes.
 - Treat `AGENTS.md` as the operating manifest and `HANDOFF.md` as the resume state.
 
 ## Required Workflow
@@ -119,6 +120,7 @@ Roles are internal helpers used by the five orchestrator skills. They are not se
 
 - Use deterministic tools for formatting, linting, type checking, tests, builds, accessibility checks, responsive screenshots, SEO checks, performance audits, dependency scanning, secret scanning, and diff inspection.
 - Feed deterministic tool outputs back into the workflow as evidence.
+- Run `bash scripts/validate-framework.sh` before committing framework maintenance changes.
 - During `implementation`, auto-discover existing commands from project manifests and configs before asking the human.
 - Do not add dependencies without approval.
 - Do not deploy without approval.
@@ -139,3 +141,4 @@ Roles are internal helpers used by the five orchestrator skills. They are not se
 - Execution skills may only edit files named or implied by the approved implementation plan.
 - Any deviation from the approved plan requires orchestrator review and, when scope or risk changes, human approval.
 - Helper skills must stay inside the active primary skill's scope and approval gates.
+- After framework freeze, protected framework files must only change through the maintenance workflow in `FRAMEWORK_FREEZE.md`.

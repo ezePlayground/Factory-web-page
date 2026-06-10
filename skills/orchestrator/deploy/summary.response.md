@@ -6,11 +6,11 @@ Use this response when deployment and production verification are complete.
 
 ## Production URL
 
-...
+[Provide verified production URL.]
 
 ## Deployment Status
 
-...
+[Summarize deployment command/result and target.]
 
 ## Production Validation Status
 
@@ -26,7 +26,7 @@ Use this response when deployment and production verification are complete.
 
 ## Known Issues
 
-...
+[List known production issues or write "None known."]
 
 ## Handoff Status
 
