@@ -57,6 +57,7 @@ None for this maintenance task.
 - Added framework freeze policy, roadmap, changelog, security policy, schemas, JSON sidecar records, validation script, GitHub workflow, issue templates, PR template, and mockup artifact rules.
 - Replaced vague template placeholders with bracketed field prompts.
 - Ran `bash scripts/validate-framework.sh`; validation passed.
+- Committed and pushed governance/validation changes to `origin/main`.
 
 ## Files Created
 
@@ -167,11 +168,9 @@ The framework includes a freeze policy, validation script, GitHub workflow, JSON
 
 ## Next Recommended Steps
 
-1. Run `bash scripts/validate-framework.sh`.
-2. Commit and push the governance/validation pass.
-3. Configure GitHub branch protection for `main`.
-4. Run a manual simulation through all five skills plus `frontend-design`.
-5. Test the static mockup approval gate before `implementation`.
+1. Configure GitHub branch protection for `main`.
+2. Run a manual simulation through all five skills plus `frontend-design`.
+3. Test the static mockup approval gate before `implementation`.
 
 ## Validation Status
 
@@ -218,13 +217,12 @@ The framework includes a freeze policy, validation script, GitHub workflow, JSON
 - `git remote -v`
 - `bash scripts/validate-framework.sh`
 - `rg -n '\\.\\.\\.' AGENTS.md HANDOFF.md README.md CONTRIBUTING.md ai-framework skills FRAMEWORK_FREEZE.md ROADMAP.md CHANGELOG.md SECURITY.md`
+- `git commit -m "Add framework governance and validation"`
+- `git push`
 
 ## Commands Still Needed
 
 - None for the markdown scaffold.
-- `git add .`
-- `git commit -m "Add framework governance and validation"`
-- `git push`
 - Manual workflow simulation is recommended for the new helper skill and static mockup gate.
 - Configure GitHub branch protection manually after the workflow is pushed.
 

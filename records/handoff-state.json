@@ -7,7 +7,7 @@
   "branch": "main",
   "pushed": true,
   "freezeStatus": "Not frozen",
-  "lastImportantEvent": "Framework validation passed locally for governance and validation changes.",
+  "lastImportantEvent": "Governance and validation changes pushed to origin/main; handoff state updated.",
   "knownIssues": [
     "No executable CLI/state-machine runner exists yet.",
     "No MCP integrations are configured yet."
