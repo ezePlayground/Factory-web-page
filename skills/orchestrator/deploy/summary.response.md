@@ -23,6 +23,8 @@ Use this response when deployment and production verification are complete.
 - Performance:
 - Security:
 - Forms/integrations:
+- DRY/KISS/YAGNI:
+- Does this website look like an AI built it?:
 
 ## Known Issues
 

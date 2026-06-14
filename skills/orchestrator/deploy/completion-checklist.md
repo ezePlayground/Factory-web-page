@@ -14,7 +14,8 @@ Before using `summary.response.md`, confirm:
 - [ ] Production validation found no known blocking bugs.
 - [ ] Console errors, responsive behavior, accessibility basics, SEO basics, performance, security, and forms/integrations were checked where relevant.
 - [ ] Production UI still matches the approved frontend design direction.
-- [ ] Keyboard support, focus states, hit targets, reduced motion, metadata, image dimensions, and browser UI theming were checked where relevant.
+- [ ] Keyboard support, focus states, focus management, hit targets, paste behavior, URL state, reduced motion, metadata, image dimensions, and browser UI theming were checked where relevant.
+- [ ] Production visual QA asks "Does this website look like an AI built it?" and the accepted answer is no.
 - [ ] Production URL is real and verified.
 - [ ] `HANDOFF.md` is updated.
 - [ ] Summary asks the human to approve, modify, or reject.

@@ -56,6 +56,7 @@ Produce:
 - Visual quality report based on screenshots, rendered page, or local URL evidence.
 - Blocking, important, and polish issues.
 - Differences from the approved design direction.
+- A direct answer to: "Does this website look like an AI built it?" The accepted answer is no.
 - Approval recommendation: approve, modify, or reject.
 
 ## Static Mockup Gate
@@ -87,17 +88,24 @@ The human must approve, modify, or reject the mockup before implementation begin
 - Do not copy protected designs.
 - Do not create inaccessible visual choices.
 - Do not use vague guidance like "modern and clean" without concrete design decisions.
+- Always ask during visual QA: "Does this website look like an AI built it?" If the answer is yes, do not approve the design.
 
 ## Interface Quality Checks
 
 Apply relevant checks from Vercel Web Interface Guidelines:
 
 - Keyboard operability and visible `:focus-visible` states.
+- Manage focus in modals, drawers, async flows, and error states.
 - Correct link versus button semantics.
 - Minimum hit targets: 24px desktop and 44px mobile.
 - Browser zoom must not be disabled.
-- Forms need labels, autocomplete where appropriate, validation, and clear error messages.
+- Inputs must not lose focus or value after hydration.
+- Do not block paste.
+- Forms need labels, autocomplete where appropriate, validation, clear error messages, mobile input sizing, and first-error focus.
 - Loading, empty, sparse, dense, and error states should be designed where relevant.
+- Loading buttons keep the original label.
+- URL state, deep links, back/forward behavior, and scroll restoration should work where relevant.
+- Destructive actions require confirmation or undo.
 - Motion should respect reduced-motion preferences.
 - Avoid `transition: all`.
 - Responsive behavior should be checked across mobile, laptop, and wide desktop.

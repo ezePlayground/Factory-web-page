@@ -18,6 +18,7 @@ A webpage is high quality only when each criterion is observable.
 - Content clarity: visitors understand what it is, who it is for, and what to do next.
 - Technical correctness: build, lint, and typecheck pass.
 - Performance: optimized assets and acceptable Lighthouse/bundle results.
-- Maintainability: scoped components and no avoidable duplication.
+- Maintainability: DRY, KISS, and YAGNI are applied; components are scoped and avoidable duplication is removed.
+- QA quality: release is blocked by known blocking bugs, unaccepted critical accessibility issues, or a rendered UI that still looks AI-built.
 - SEO basics: title, description, semantic headings, metadata, and crawlable content.
 - Production readiness: human-approved UI and deployed production verification without known bugs.

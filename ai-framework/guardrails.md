@@ -5,6 +5,7 @@
 | Hallucinated requirements | Claim absent from approved brief | Mark assumptions explicitly | Ask or remove claim |
 | Unnecessary file changes | Diff outside plan | Scoped file allowlist | Revert own unrelated edits |
 | Scope creep | New feature outside scope | Approval gates | Move to backlog |
+| Duplication | Repeated logic, components, prompts, or validation rules without reason | DRY check | Consolidate or justify the duplication |
 | Over-engineering | Extra dependencies or abstractions | KISS/YAGNI check | Simplify |
 | Under-engineering | Required behavior missing | Checklist gap | Add minimal missing work |
 | Wrong output format | Template mismatch | Required templates and checklists | Regenerate output |
@@ -22,6 +23,7 @@
 | Inaccessible UI | A11y violations | A11y checklist | Fix semantics/focus/contrast |
 | Generic design | Human/design QA rejection | Design proposal gate | Rework direction |
 | Generic AI slop | UI could fit any product, lacks approved signature move, or ignores frontend-design guidance | Use `frontend-design`, Aesthetic Playbook guidance, and static mockup approval | Rework visual direction before implementation or fix rendered UI in scope |
+| AI-built look | Reviewer answers "yes" to "Does this website look like an AI built it?" | Distinctive direction, real content specificity, screenshot QA, and anti-slop review | Rework visual direction, layout, copy, imagery, and details until the answer is no |
 | Vague copy | Could fit any product | Copy specificity review | Rewrite |
 | Non-responsive layout | Screenshot failure | Viewport review | Fix layout |
 | Poor SEO | Missing metadata/headings | SEO review | Fix SEO basics |

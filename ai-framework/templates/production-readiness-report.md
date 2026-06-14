@@ -13,6 +13,7 @@
 - [ ] Production UI matches approved frontend design direction
 - [ ] No unrelated changes
 - [ ] No dead code
+- [ ] DRY, KISS, and YAGNI reviewed
 - [ ] No unapproved placeholders
 - [ ] Responsive layout tested
 - [ ] Accessibility basics passed
@@ -26,6 +27,7 @@
 - [ ] No console errors
 - [ ] No broken links
 - [ ] Keyboard support, focus states, hit targets, forms, loading/error states, reduced motion, image dimensions, metadata, and browser UI theming checked where relevant
+- [ ] Design QA asks "Does this website look like an AI built it?" and the accepted answer is no
 - [ ] No sensitive data exposed
 - [ ] Production deployment completed
 - [ ] Production page verified without known bugs

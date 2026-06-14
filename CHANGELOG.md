@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Strengthened final quality gates for DRY, KISS, YAGNI, AI-built visual review, expanded Vercel interaction checks, and QA release blocking.
 - Added framework freeze policy, roadmap, changelog, and security policy.
 - Added JSON Schemas and JSON sidecar records for machine-checkable framework state.
 - Added validation script and GitHub validation workflow.
@@ -17,4 +18,3 @@
 - Added `frontend-design` helper skill and Aesthetic Playbook guidance.
 - Added approval gates, deterministic validation expectations, and handoff continuity rules.
 - Prepared the repository with README, MIT license, gitignore, and contributing guide.
-

@@ -90,6 +90,15 @@ require_text "Not frozen" FRAMEWORK_FREEZE.md
 require_text "artifacts/mockups/" README.md
 require_text "records/approvals/" README.md
 require_text "HANDOFF.md.*important event|important events.*HANDOFF.md" AGENTS.md
+require_text "DRY" ai-framework/global-rules.md
+require_text "KISS" ai-framework/global-rules.md
+require_text "YAGNI" ai-framework/global-rules.md
+require_text "Does this website look like an AI built it\\?" skills/helper/frontend-design/SKILL.md
+require_text "Does this website look like an AI built it\\?" ai-framework/templates/qa-report.md
+require_text "paste" skills/helper/frontend-design/SKILL.md
+require_text "URL state" skills/helper/frontend-design/SKILL.md
+require_text "focus management|Manage focus" skills/helper/frontend-design/SKILL.md
+require_text "known blocking bugs" ai-framework/roles/qa-reviewer.md
 
 reject_text "No GitHub remote has been created|Push the local initial commit|Create a GitHub repository and add it as a remote|Remote creation and push are intentionally left" HANDOFF.md README.md
 reject_text 'Final page structure|Full content requirements|Required schemas|Use the requested skill under `skills/orchestrator/`' AGENTS.md HANDOFF.md README.md CONTRIBUTING.md ai-framework skills

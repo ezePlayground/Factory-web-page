@@ -14,9 +14,11 @@ Before using `summary.response.md`, confirm:
 - [ ] Lint was run when available.
 - [ ] Typecheck was run when available.
 - [ ] Tests were run when available.
+- [ ] DRY, KISS, and YAGNI were reviewed in the implementation.
 - [ ] Accessibility, responsive, SEO, performance, and security checks are run when available or marked not available.
-- [ ] Interface checks cover keyboard support, visible focus, link/button semantics, hit targets, forms, loading/error states, reduced motion, image dimensions, metadata, and browser UI theming where relevant.
+- [ ] Interface checks cover keyboard support, focus management, visible focus, link/button semantics, hit targets, forms, paste behavior, loading/error states, URL state, reduced motion, image dimensions, metadata, and browser UI theming where relevant.
 - [ ] Rendered UI has been checked against the approved frontend design direction.
+- [ ] Visual QA asks "Does this website look like an AI built it?" and the accepted answer is no before local approval.
 - [ ] Known issues are listed.
 - [ ] Local page has no known blocking bugs.
 - [ ] Summary asks the human to approve, modify, or reject.

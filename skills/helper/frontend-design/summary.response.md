@@ -55,6 +55,11 @@ Planning direction, implementation guidance, or visual QA.
 
 [List screenshot/rendered-page findings when QA mode is requested, or mark not applicable.]
 
+## AI-Built Look Check
+
+- Does this website look like an AI built it?:
+- If yes, required changes:
+
 ## Risks
 
 [List visual, implementation, accessibility, or approval risks.]

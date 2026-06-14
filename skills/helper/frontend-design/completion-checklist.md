@@ -16,4 +16,5 @@ Before using `summary.response.md`, confirm:
 - [ ] Vercel-derived interface checks are included where relevant.
 - [ ] Anti-slop constraints are listed.
 - [ ] Visual QA findings are based on screenshots, rendered page, or local URL evidence when QA is requested.
+- [ ] Visual QA asks "Does this website look like an AI built it?" and the accepted answer is no before approval.
 - [ ] Summary asks the human to approve, modify, or reject.

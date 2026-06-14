@@ -25,6 +25,13 @@ Use this response when implementation is complete locally.
 - Approved design direction followed:
 - Static mockup approval checked:
 - Visual QA status:
+- Does this website look like an AI built it?:
+
+## Code Quality Verification
+
+- DRY:
+- KISS:
+- YAGNI:
 
 ## Validation Status
 
